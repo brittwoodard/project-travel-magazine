@@ -4,6 +4,24 @@ title: Homepage
 banner:
   heading: A whole new world.
   description: Surfing teachings you to appreciate the finer things in life, to be present, live in the moment and just breathe.
+text_blurb:
+  heading: A facinating heading about the site.
+  description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minus dolores ratione suscipit odit minima consectetur voluptates rerum, laboriosam nisi ad dolore! Iure minima modi dicta eum maiores voluptatibus est.
+  button: 
+    text: Read more
+    url: "#"
+  image: 
+    image_path: /uploads/travel/travel-1.jpg
+    alt_text: A placeholder alt description
+itinerary: 
+ - destination: Europe
+   text: Dates
+ - destination: Australia
+   text: Dates
+ - destination: Asia
+   text: Dates
+ - destination: Europe
+   text: Dates
 seo:
   title: 
   description:
@@ -17,7 +35,21 @@ seo:
 {% include hero-banner.html %}
 
 <!-- About Blurb -->
+<section>
+    <h2>{{page.text_blurb.heading}}</h2>
+    <p>{{page.text_blurb.description}}</p>
+    <a href="{{page.text_blurb.button.url}}">{{page.text_blurb.button.text}}</a>
+</section>
 
+<!-- Upcoming Destinations -->
+<section>
+    <h2>Upcoming travel destinations</h2>
+    <div>
+        {% for item in page.itinerary %}
+        <p>{{item.itinerary.destination}}</p>
+        <p>{{item.itinerary.text}}</p>
+    </div>
+</section>
 
 <!-- {{site.data.site-settings.global-cta-options}} -->
 <!------------------------ Featured blog loop ------------------------>

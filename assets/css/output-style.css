@@ -965,12 +965,6 @@ video {
 .justify-center {
   justify-content: center;
 }
-.justify-items-start {
-  justify-items: start;
-}
-.justify-items-end {
-  justify-items: end;
-}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1156,7 +1150,10 @@ video {
   
 img { max-width: 100%; height: auto; }
 
-section { position: relative; }
+section { 
+    position: relative; 
+    border: 1px solid olive;
+}
 
 div {
     background-size: cover;
