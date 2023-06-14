@@ -965,6 +965,12 @@ video {
 .justify-center {
   justify-content: center;
 }
+.justify-items-start {
+  justify-items: start;
+}
+.justify-items-end {
+  justify-items: end;
+}
 .gap-2 {
   gap: 0.5rem;
 }
