@@ -38,7 +38,7 @@ div {
     background-position: center;
 }
 
-h2 {
+h2, h3 {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
     font-size: 3rem;
@@ -56,7 +56,7 @@ h2 {
     text-transform: uppercase; 
     font-family: 'Italiana', serif;
     letter-spacing: 0.1em;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 4rem;
     border-bottom: 1px solid black;
