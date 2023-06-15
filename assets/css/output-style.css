@@ -313,6 +313,79 @@ video {
 [hidden] {
   display: none;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: color 0.5s, background-color 0.5s, width 0.5s;
+}
+body {
+    font-weight: 300;
+}
+img { max-width: 100%; height: auto; }
+section { 
+    position: relative; 
+}
+div {
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+  margin-bottom: 1rem;
+  font-family: Italiana, serif;
+  font-size: 13vw;
+  line-height: 0.8;
+}
+h2, h3, h4 {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-family: Italiana, serif;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.prose blockquote {
+  margin: 0px;
+  border-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: Italiana, serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-style: normal;
+  letter-spacing: 0.025em;
+}
+.tag {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
+}
+.button {
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  font-family: Italiana, serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.blurb {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-family: Italiana, serif;
+    text-align: center;
+    text-transform: initial;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1174,11 +1247,11 @@ video {
 .text-center {
   text-align: center;
 }
-.font-serif {
-  font-family: Italiana, serif;
-}
 .font-sans {
   font-family: Montserrat, sans-serif;
+}
+.font-serif {
+  font-family: Italiana, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1232,9 +1305,6 @@ video {
 .font-normal {
   font-weight: 400;
 }
-.font-medium {
-  font-weight: 500;
-}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1273,105 +1343,31 @@ video {
 /* Custom CSS */
 
 /* ----------- CSS RESET --------- */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: color 0.5s, background-color 0.5s, width 0.5s;
-}
-
-body {
-    font-weight: 300;
-}
-  
-img { max-width: 100%; height: auto; }
-
-section { 
-    position: relative; 
-}
-
-div {
-    background-size: cover;
-    background-position: center;
-}
-
-h1 {
-    font-family: 'Italiana', serif;
-    font-size: 13vw;
-    margin-bottom: 1rem;
-    line-height: 0.8em;
-    color: white;
-}
-
-h2, h3 {
-    text-transform: uppercase;
-    font-family: 'Italiana', serif;
-    font-size: 3rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
-.tag {
-  font-size: 0.75rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-
-.button {
-    text-transform: uppercase; 
-    font-family: 'Italiana', serif;
-    letter-spacing: 0.1em;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 4rem;
-    border-bottom: 1px solid black;
-    display: inline-block;
-}
-
-.blurb {
-    font-size: 4.5rem;
-    line-height: 1;
-    font-family: Italiana, serif;
-    text-align: center;
-    text-transform: initial;
-}
-
 .hover\:bg-zinc-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-zinc-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
-
 .hover\:text-rose-500:hover {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
 }
-
 .hover\:text-rose-600:hover {
   --tw-text-opacity: 1;
   color: rgb(225 29 72 / var(--tw-text-opacity));
 }
-
 .group:hover .group-hover\:grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
 @media not all and (min-width: 640px) {
   .max-sm\:hidden {
     display: none;
   }
 }
-
 @media (min-width: 640px) {
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -1383,7 +1379,6 @@ h2, h3 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
-
 @media (min-width: 768px) {
   .md\:col-span-3 {
     grid-column: span 3 / span 3;

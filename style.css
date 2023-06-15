@@ -15,7 +15,7 @@
   }
 
 /* ----------- CSS RESET --------- */
-
+@layer base {
 * {
     padding: 0;
     margin: 0;
@@ -39,20 +39,15 @@ div {
 }
 
 h1 {
-    font-family: 'Italiana', serif;
-    font-size: 13vw;
-    margin-bottom: 1rem;
-    line-height: 0.8em;
-    color: white;
+    @apply font-serif text-[13vw] mb-4 leading-[0.8];
 }
 
-h2, h3 {
-    text-transform: uppercase;
-    font-family: 'Italiana', serif;
-    font-size: 3rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 4rem;
-    text-align: center;
+h2, h3, h4 {
+    @apply uppercase font-serif mb-16 text-center text-5xl tracking-widest
+}
+
+.prose blockquote {
+    @apply font-serif text-center text-5xl tracking-wide not-italic border-none m-0 px-4 py-8;
 }
 
 .tag {
@@ -61,14 +56,7 @@ h2, h3 {
 }
 
 .button {
-    text-transform: uppercase; 
-    font-family: 'Italiana', serif;
-    letter-spacing: 0.1em;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 4rem;
-    border-bottom: 1px solid black;
-    display: inline-block;
+    @apply uppercase font-serif mb-4 inline-block border-b border-black tracking-widest text-2xl
 }
 
 .blurb {
@@ -77,4 +65,6 @@ h2, h3 {
     font-family: Italiana, serif;
     text-align: center;
     text-transform: initial;
+}
+
 }
