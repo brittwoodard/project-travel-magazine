@@ -43,7 +43,16 @@ seo:
   hide-from-google: false
 ---
 <!-- Header -->
+
+{% if page.banner-style-indented == true %}
+
 {% include hero-banner.html %}
+
+{% else %}
+
+{% include hero-banner-blog.html %}
+
+{% endif %}
 
 <!-- About Blurb -->
 <section class="grid grid-cols-5 p-5p bg-sand">

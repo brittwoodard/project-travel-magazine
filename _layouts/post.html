@@ -3,24 +3,31 @@ layout: default
 ---
 
 <!-- Header -->
-<section>
-    {% include hero-banner.html %}
-</section>
+
+{% if page.banner-style-indented == true %}
+
+{% include hero-banner.html %}
+
+{% else %}
+
+{% include hero-banner-blog.html %}
+
+{% endif %}
 
 <!-- Post -->
 <section>
-    <div class="flex justify-between px-10p py-5p">
+    <div class="flex justify-between items-center px-10p py-5p">
         <div>
             <p>by {{page.author}}</p>
         </div>
         <div>
-            <h2 class="uppercase text-3xl">{{page.title}}</h2>
+            <h2 class="mb-0 text-4xl">{{page.title}}</h2>
         </div>
         <div>
             <p>{{page.date | date_to_string}}</p>
         </div>
     </div>
-    <hr>
+    <hr class="border-t border-black">
     <div class="px-10p">
         <h3 class="text-center uppercase text-xl mt-16">{{page.subtitle}}</h3>
         <div class="p-2 prose max-w-screen-lg mx-auto my-16">

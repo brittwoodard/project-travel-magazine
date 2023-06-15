@@ -876,6 +876,9 @@ video {
 .-ml-\[35\%\] {
   margin-left: -35%;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1287,6 +1290,14 @@ div {
     background-position: center;
 }
 
+h1 {
+    font-family: 'Italiana', serif;
+    font-size: 13vw;
+    margin-bottom: 1rem;
+    line-height: 0.8em;
+    color: white;
+}
+
 h2, h3 {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
@@ -1380,8 +1391,14 @@ h2, h3 {
   .md\:max-w-2xl {
     max-width: 42rem;
   }
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
   .md\:max-w-\[90\%\] {
     max-width: 90%;
+  }
+  .md\:max-w-xl {
+    max-width: 36rem;
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

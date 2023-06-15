@@ -10,6 +10,17 @@ seo:
   hide-from-google: false
 ---
 
+<!-- Header -->
+
+{% if page.banner-style-indented == true %}
+
+{% include hero-banner.html %}
+
+{% else %}
+
+{% include hero-banner-blog.html %}
+
+{% endif %}
 <!------------------------ Split blog loop (part 1) ------------------------>
 <section class="p-5p">
 

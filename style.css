@@ -38,6 +38,14 @@ div {
     background-position: center;
 }
 
+h1 {
+    font-family: 'Italiana', serif;
+    font-size: 13vw;
+    margin-bottom: 1rem;
+    line-height: 0.8em;
+    color: white;
+}
+
 h2, h3 {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
