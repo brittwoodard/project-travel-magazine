@@ -19,7 +19,6 @@ itinerary:
   heading: Upcoming travel destinations
   image: 
     image_path: /uploads/travel/travel-1.jpg
-    alt: A placeholder alt description
     overlay_text: Currently in...
   destinations: 
     - location: Europe
@@ -47,7 +46,7 @@ seo:
 {% include hero-banner.html %}
 
 <!-- About Blurb -->
-<section class="grid grid-cols-5 p-5p">
+<section class="grid grid-cols-5 p-5p bg-sand">
   <div class="col-span-2 bg-[url('{{page.text_blurb.image_path | default: page.featured_image}}')] min-h-full"></div>
   <div class="col-span-3 pl-8">
     <h2 class="font-serif text-7xl text-center max-w-lg py-16 -ml-[35%]">{{ page.text_blurb.heading }}</h2>
@@ -57,18 +56,24 @@ seo:
 </section>
 
 <!-- Upcoming Destinations -->
-<section>
-  <h2>
-    {{ page.itinerary.heading }}
+<section class="p-10p border border-black">
+  <h2 class="uppercase font-serif text-center text-5xl tracking-widest mb-16">
+    {{page.itinerary.heading}}
   </h2>
-  <ul>
-    {% for item in page.itinerary.destinations %}
-      <li>
-        <div>{{ item.location }}</div>
-        <div>{{ item.date }}</div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="grid grid-cols-5">
+    <div class="col-span-3 uppercase text-lg tracking-widest">
+      <ul class="border-t border-black">
+        {% for item in page.itinerary.destinations %}
+          <li class="border-b border-black py-8 flex justify-between">
+            <div class="justify-start">{{ item.location }}</div>
+            <div class="justify-end">{{ item.date }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="col-span-2 bg-[url('{{page.itinerary.image.image_path}}')]"></div>
+  <div><span class="font-serif text-6xl bg-medium">{{page.itinerary.image.overlay_text}}</span></div>
 </section>
 
 <!-- Recent Posts -->
