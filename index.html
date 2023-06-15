@@ -47,12 +47,12 @@ seo:
 {% include hero-banner.html %}
 
 <!-- About Blurb -->
-<section class="grid grid-cols-6 p-5p">
+<section class="grid grid-cols-5 p-5p">
   <div class="col-span-2 bg-[url('{{page.text_blurb.image_path | default: page.featured_image}}')] min-h-full"></div>
-  <div class="col-span-4 pl-8">
+  <div class="col-span-3 pl-8">
     <h2 class="font-serif text-7xl text-center max-w-lg py-16 -ml-[35%]">{{ page.text_blurb.heading }}</h2>
-    <p>{{ page.text_blurb.description }}</p>
-    <a href="{{page.text_blurb.button.url}}">{{ page.text_blurb.button.text }}</a>
+    <p class="mb-16">{{ page.text_blurb.description }}</p>
+    <a href="{{page.text_blurb.button.url}}" class="mb-16 inline-block uppercase text-xl font-serif tracking-widest border-b border-black">{{ page.text_blurb.button.text }}</a>
   </div>
 </section>
 
