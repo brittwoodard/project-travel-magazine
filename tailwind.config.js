@@ -23,8 +23,8 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      sans: ['Figtree', 'sans-serif'],
-      serif: ['Playfair Display', 'serif'],
+      sans: ['Montserrat', 'sans-serif'],
+      serif: ['Italiana', 'serif'],
     },
     extend: {
       lineHeight: {
@@ -59,8 +59,9 @@ module.exports = {
       },
       colors: {
         'dark': 'rgb(63 63 70);',
-        'light': 'rgb(244 244 245);',
+        'light': 'white',
         'featured': 'rgb(248 113 113);',
+        'sand': '#d5d1cd',
       },
     },
   },
