@@ -15,8 +15,8 @@ banner:
 
 <!-- Archive -->
 <section>
-    <h2>Recently on the blog.</h2>
-    <div>
+    <h2 class="text-center uppercase py-16 text-3xl">Recently on the blog.</h2>
+    <div class="grid">
         {% for post in site.posts limit:10 %}
             {% include post-loop-list-item.html %}
         {% endfor %}
