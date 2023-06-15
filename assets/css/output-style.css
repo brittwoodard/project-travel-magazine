@@ -962,8 +962,17 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -1109,6 +1118,14 @@ video {
   font-size: 0.75rem;
   line-height: 1.2;
 }
+.text-lg {
+  font-size: 1.125rem;;
+  line-height: 1.2;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -1120,6 +1137,12 @@ video {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-light {
   color: rgb(244 244 245);;
