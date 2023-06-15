@@ -1177,6 +1177,9 @@ video {
 .font-serif {
   font-family: Italiana, serif;
 }
+.font-sans {
+  font-family: Montserrat, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -1228,6 +1231,9 @@ video {
 }
 .font-normal {
   font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
