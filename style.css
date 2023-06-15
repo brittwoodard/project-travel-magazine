@@ -22,6 +22,10 @@
     box-sizing: border-box;
     transition: color 0.5s, background-color 0.5s, width 0.5s;
 }
+
+body {
+    font-weight: 300;
+}
   
 img { max-width: 100%; height: auto; }
 
@@ -34,11 +38,35 @@ div {
     background-position: center;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
 .tag {
 
     @apply uppercase text-zinc-600 text-xs tracking-wide;
 }
 
-body {
-    font-weight: 300;
+.button {
+    text-transform: uppercase; 
+    font-family: 'Italiana', serif;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+
+.blurb {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-family: Italiana, serif;
+    text-align: center;
+    text-transform: initial;
 }

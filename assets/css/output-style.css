@@ -831,6 +831,9 @@ video {
 .-top-4 {
   top: -1rem;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
 .left-0 {
   left: 0px;
 }
@@ -880,6 +883,9 @@ video {
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.ml-8 {
+  margin-left: 2rem;
 }
 .mr-1 {
   margin-right: 0.25rem;
@@ -1008,17 +1014,14 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border {
-  border-width: 1px;
-}
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t-2 {
-  border-top-width: 2px;
-}
 .border-t {
   border-top-width: 1px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -1145,10 +1148,6 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .pb-1\/1 {
   padding-bottom: 100%;
 }
@@ -1191,6 +1190,10 @@ video {
 .text-\[13vw\] {
   font-size: 13vw;
 }
+.text-lg {
+  font-size: 1.125rem;;
+  line-height: 1.2;
+}
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
@@ -1201,10 +1204,6 @@ video {
 }
 .text-xs {
   font-size: 0.75rem;
-  line-height: 1.2;
-}
-.text-lg {
-  font-size: 1.125rem;;
   line-height: 1.2;
 }
 .font-bold {
@@ -1258,6 +1257,10 @@ video {
     box-sizing: border-box;
     transition: color 0.5s, background-color 0.5s, width 0.5s;
 }
+
+body {
+    font-weight: 300;
+}
   
 img { max-width: 100%; height: auto; }
 
@@ -1270,6 +1273,15 @@ div {
     background-position: center;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
 .tag {
   font-size: 0.75rem;
   line-height: 1.2;
@@ -1279,8 +1291,23 @@ div {
   color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
-body {
-    font-weight: 300;
+.button {
+    text-transform: uppercase; 
+    font-family: 'Italiana', serif;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+
+.blurb {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-family: Italiana, serif;
+    text-align: center;
+    text-transform: initial;
 }
 
 .hover\:bg-zinc-100:hover {

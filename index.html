@@ -49,19 +49,19 @@ seo:
 <section class="grid grid-cols-5 p-5p bg-sand">
   <div class="col-span-2 bg-[url('{{page.text_blurb.image_path | default: page.featured_image}}')] min-h-full"></div>
   <div class="col-span-3 pl-8">
-    <h2 class="font-serif text-7xl text-center max-w-lg py-16 -ml-[35%]">{{ page.text_blurb.heading }}</h2>
+    <h2 class="max-w-lg py-16 -ml-[35%] blurb">{{ page.text_blurb.heading }}</h2>
     <p class="mb-16">{{ page.text_blurb.description }}</p>
-    <a href="{{page.text_blurb.button.url}}" class="mb-16 inline-block uppercase text-xl font-serif tracking-widest border-b border-black">{{ page.text_blurb.button.text }}</a>
+    <a href="{{page.text_blurb.button.url}}" class="button">{{ page.text_blurb.button.text }}</a>
   </div>
 </section>
 
 <!-- Upcoming Destinations -->
-<section class="p-10p border border-black">
+<section class="p-10p border-t border-black">
   <h2 class="uppercase font-serif text-center text-5xl tracking-widest mb-16">
     {{page.itinerary.heading}}
   </h2>
-  <div class="grid grid-cols-5">
-    <div class="col-span-3 uppercase text-lg tracking-widest">
+  <div class="grid grid-cols-4">
+    <div class="col-span-2 uppercase text-lg tracking-widest py-5p">
       <ul class="border-t border-black">
         {% for item in page.itinerary.destinations %}
           <li class="border-b border-black py-8 flex justify-between">
@@ -71,16 +71,16 @@ seo:
         {% endfor %}
       </ul>
     </div>
+  <div class="col-span-2 relative bg-[url('{{page.itinerary.image.image_path}}')] ml-8">
+    <div><span class="font-serif text-7xl tracking-wide bg-medium absolute bottom-4 left-0">{{page.itinerary.image.overlay_text}}</span></div>
   </div>
-  <div class="col-span-2 bg-[url('{{page.itinerary.image.image_path}}')]"></div>
-  <div><span class="font-serif text-6xl bg-medium">{{page.itinerary.image.overlay_text}}</span></div>
 </section>
 
 <!-- Recent Posts -->
-<section class="p-5p">
+<section class="p-10p bg-sand">
+  <h2>{{page.blog.heading}}</h2>
 
   <div class="max-w-screen-xl mx-auto md:columns-3">
-
 
     {% assign featured_posts = site.posts | where: 'featured', true %}
 
