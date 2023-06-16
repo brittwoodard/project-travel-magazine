@@ -1401,6 +1401,9 @@ h2, h3, h4 {
 .uppercase {
   text-transform: uppercase;
 }
+.capitalize {
+  text-transform: capitalize;
+}
 .leading-\[0\.9\] {
   line-height: 0.9;
 }
