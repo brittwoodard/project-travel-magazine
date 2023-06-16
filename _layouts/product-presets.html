@@ -2,13 +2,6 @@
 layout: default
 ---
 
-<section class="p-8">
-	Product: {{page.title}}
-	Price: {{page.price}}
-	Before: <img src="{{page.before-image}}">
-	After: <img src="{{page.after-image}}">
-</section>
-
 <!-- Header -->
 <section class="grid grid-cols-2">
 	<div class="col-span-1">
@@ -43,18 +36,20 @@ layout: default
 <!-- How To -->
 <section class="grid grid-cols-3">
 	<div class="col-span-1">
-		<h2>How to use your presets</h2>
-		<ul></ul>
+		<h2>{{site.data.preset-settings.instructions.heading}}</h2>
+		<p>{{site.data.preset-settings.instructions.description_html}}</p>
 	</div>
-	<div class="col-span-2">video</div>
+	<div class="col-span-2">{{site.data.preset-settings.instructions.video_}}</div>
 </section>
 
 <!-- FAQ -->
 <section>
 	<h2>FAQ's</h2>
 	<div class="flex justify-between">
-		<h3>Question</h3>
-		<p>Answer</p>
+		{% for item in site.data.preset-settings.faq %}
+		<h3>{{item.question}}</h3>
+		<p>{{item.answer}}</p>
+		{% endfor %}
 	</div>
 </section>
 
