@@ -1024,6 +1024,9 @@ h2, h3, h4 {
 .min-h-full {
   min-height: 100%;
 }
+.min-h-70 {
+  min-height: 70vh;
+}
 .w-10 {
   width: 2.5rem;
 }

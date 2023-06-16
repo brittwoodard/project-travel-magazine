@@ -10,7 +10,7 @@ layout: default
 		<p>{{page.description}}</p>
 		<a href="#">Buy Now</a>
 	</div>
-	<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+	<div class="col-span-1 min-h-70" style="background-image:url('{{page.featured_image}}');"></div>
 </section>
 
 <!-- Before & After -->
@@ -54,12 +54,7 @@ layout: default
 </section>
 
 <!-- Related Products -->
-<section>
-	<h2>Related Products</h2>
-	<div class="grid grid-cols-3">
-		LOOP
-	</div>
-</section>
+{% include related-products.html %}
 
 <!-- 
 Header section

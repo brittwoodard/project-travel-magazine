@@ -1,6 +1,34 @@
 ---
 layout: default 
+title: Shop
+banner: 
+  heading: Shop.
+  description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+banner-style-indented: false
 ---
+
+<!-- Header -->
+
+{% if page.banner-style-indented == true %}
+
+{% include hero-banner.html %}
+
+{% else %}
+
+{% include hero-banner-full.html %}
+
+{% endif %}
+
+<!-- Explore Products -->
+<section>
+	<h2>Explore all our products</h2>
+	<div>
+		<a href="#">Show all</a>
+		<a href="#">Travel Guides</a>
+		<a href="#">Lightroom Presets</a>
+	</div>
+	
+</section>
 
 <section class="p-8 max-w-screen-xl mx-auto">
 
