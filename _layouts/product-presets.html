@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<section class="p-8"> 
-	Product:  {{page.title}} 
+<section class="p-8">
+	Product: {{page.title}}
 	Price: {{page.price}}
 	Before: <img src="{{page.before-image}}">
 	After: <img src="{{page.after-image}}">
-</section> 
+</section>
 
 <!-- Header -->
 <section class="grid grid-cols-2">
@@ -22,18 +22,21 @@ layout: default
 
 <!-- Before & After -->
 <section class="grid grid-cols-3">
-	<div class="col-span-2" style="background-image:url('{{page.featured_image}}');"></div>
-	<div class="col-span-2 grid grid-cols-6">
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
-		<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+	<div class="col-span-2">
+		<div style="background-image:url('{{page.featured_image}}');" class="min-h-60">
+		</div>
+		<div class="grid grid-cols-6">
+			<div class="col-span-1 aspect-square" style="background-image:url('{{page.featured_image}}');"></div>
+			<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+			<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+			<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+			<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+			<div class="col-span-1" style="background-image:url('{{page.featured_image}}');"></div>
+		</div>
 	</div>
 	<div class="col-span-1">
 		<h2>Before & After</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad impedit labore debitis saepe beatae, nobis, dolorum provident ipsa repellendus molestias id? Adipisci repellat maiores voluptate atque eligendi assumenda dignissimos!</p>
+		<p>{{page.before_after_description}}</p>
 	</div>
 </section>
 
