@@ -38,14 +38,19 @@ layout: default
 </section>
 
 <!-- FAQ -->
-<section>
-	<h2>FAQ's</h2>
-	<div class="flex justify-between">
+<section class="p-10p">
+	<h2 class="text-4xl uppercase border-b border-black pb-8">FAQ's</h2>
+	<ul>
 		{% for item in site.data.preset-settings.faq %}
-		<h3>{{item.question}}</h3>
-		<p>{{item.answer}}</p>
+		<li class="flex justify-between border-b border-black my-8">
+			<div>
+				<h3 class="font-sans text-xl font-normal">{{item.question}}</h3>
+				<p class="hidden">{{item.answer}}</p>
+			</div>
+			<span>></span>
+		</li>
 		{% endfor %}
-	</div>
+	</ul>
 </section>
 
 <!-- Related Products -->
