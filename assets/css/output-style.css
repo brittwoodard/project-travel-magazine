@@ -344,6 +344,11 @@ h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+footer h2 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 .prose blockquote {
   margin: 0px;
   border-style: none;
@@ -371,7 +376,7 @@ h2, h3, h4 {
   display: inline-block;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
   font-family: Italiana, serif;
   font-size: 1.5rem;
   line-height: 1.2;
@@ -381,7 +386,7 @@ h2, h3, h4 {
 .shopify-button {
   display: inline-block;
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
@@ -985,9 +990,6 @@ h2, h3, h4 {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-10p {
-  margin-left: 10%;
-}
 .ml-8 {
   margin-left: 2rem;
 }
@@ -1160,9 +1162,9 @@ h2, h3, h4 {
 .border-t-2 {
   border-top-width: 2px;
 }
-.border-black {
+.border-dark {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
 }
 .border-rose-600 {
   --tw-border-opacity: 1;
@@ -1173,7 +1175,8 @@ h2, h3, h4 {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-dark {
-  background-color: rgb(63 63 70);;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 .bg-medium {
   --tw-bg-opacity: 1;
@@ -1214,10 +1217,6 @@ h2, h3, h4 {
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-.bg-zinc-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
@@ -1313,26 +1312,20 @@ h2, h3, h4 {
 .pb-1\/1 {
   padding-bottom: 100%;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pb-\[20vw\] {
   padding-bottom: 20vw;
 }
 .pl-8 {
   padding-left: 2rem;
 }
-.pt-6 {
-  padding-top: 1.5rem;
-}
-.pr-8 {
-  padding-right: 2rem;
-}
 .pr-16 {
   padding-right: 4rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
-}
-.pb-8 {
-  padding-bottom: 2rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .text-left {
   text-align: left;
@@ -1481,9 +1474,6 @@ h2, h3, h4 {
   }
   .md\:col-span-9 {
     grid-column: span 9 / span 9;
-  }
-  .md\:grid {
-    display: grid;
   }
   .md\:max-w-2xl {
     max-width: 42rem;

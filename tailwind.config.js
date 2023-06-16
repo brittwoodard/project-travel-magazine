@@ -58,7 +58,7 @@ module.exports = {
         'portrait': '4/5',
       },
       colors: {
-        'dark': 'rgb(63 63 70);',
+        'dark': '#27272a',
         'medium': '#d5d1cd',
         'light': 'white',
         'featured': 'rgb(248 113 113);',
