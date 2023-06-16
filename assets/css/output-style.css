@@ -931,6 +931,9 @@ h2, h3, h4 {
 .col-span-7 {
   grid-column: span 7 / span 7;
 }
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1058,6 +1061,12 @@ h2, h3, h4 {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -1078,6 +1087,9 @@ h2, h3, h4 {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .self-center {
   align-self: center;
@@ -1188,6 +1200,9 @@ h2, h3, h4 {
 }
 .p-5p {
   padding: 5%;
+}
+.p-8 {
+  padding: 2rem;
 }
 .px-10p {
   padding-left: 10%;
@@ -1413,4 +1428,7 @@ h2, h3, h4 {
   .md\:overflow-x-auto {
     overflow-x: auto;
   }
+}
+.\[\&\>\=\*\:nth-child\(2\)\]\:col-span-2>=*:nth-child(2) {
+  grid-column: span 2 / span 2;
 }

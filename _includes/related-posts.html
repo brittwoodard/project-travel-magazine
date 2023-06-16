@@ -3,7 +3,7 @@
 
     <h4 class="text-2xl"> Related Posts </h4>
 
-    <div class="grid grid-cols-4 gap-2 align-items-center">
+    <div class="grid grid-cols-4 gap-2 align-items-center [&>=*:nth-child(2)]:col-span-2">
 
 
       {% capture pageCategory %}{{ page.categories[0] }}{% endcapture %}
@@ -13,8 +13,7 @@
 
       {% for post in relevant-posts limit:3 %}
 
-      <div class="break-inside-avoid block mb-4 px-2
-       {% cycle 'col-span-1', 'col-span-2', 'col-span-1' %}" href="{{post.url}}">
+      <div class="break-inside-avoid block mb-4 px-2 " href="{{post.url}}">
 
         <!-- Background image -->
         <div class="bg-cover pb-[20vw]" style="background-image:url( '{{ post.featured_image }}' );"></div>
@@ -26,7 +25,7 @@
           </h3>
           <p class="leading-relaxed mb-4">
             {{post.description}}</p>
-          <a href="{{page.blog.button.url}}" class="button">Read more</a>
+          <a href="{{post.url}}" class="button">Read more</a>
         </div>
       </div>
 

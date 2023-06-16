@@ -11,7 +11,6 @@ text_blurb:
   image_path: /uploads/travel/travel-1.jpg
   button: 
     text: Read more
-    url: "#"
   image: 
     image_path: /uploads/travel/travel-1.jpg
     alt_text: A placeholder alt description
@@ -60,7 +59,7 @@ seo:
   <div class="col-span-3 pl-8">
     <h2 class="max-w-lg py-16 -ml-[35%] blurb">{{ page.text_blurb.heading }}</h2>
     <p class="mb-16">{{ page.text_blurb.description }}</p>
-    <a href="{{page.text_blurb.button.url}}" class="button">{{ page.text_blurb.button.text }}</a>
+    <a href="{{page.text_blurb.button.url}}" class="button mb-16">{{ page.text_blurb.button.text }}</a>
   </div>
 </section>
 
@@ -108,7 +107,7 @@ seo:
           </h3>
           <p class="leading-relaxed mb-4">
             {{ post.description }}</p>
-          <a href="{{page.blog.button.url}}" class="button">{{ page.blog.button.text }}</a>
+          <a href="{{post.url}}" class="button">{{ page.blog.button.text }}</a>
         </div>
       </div>
 
