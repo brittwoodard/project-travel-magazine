@@ -1119,6 +1119,9 @@ footer h2 {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1289,6 +1292,10 @@ footer h2 {
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+.bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
@@ -1502,6 +1509,9 @@ footer h2 {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1517,6 +1527,12 @@ footer h2 {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
+}
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 /* Custom CSS */
@@ -1570,6 +1586,10 @@ footer h2 {
   }
   .sm\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+  .sm\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
