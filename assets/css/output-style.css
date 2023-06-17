@@ -1334,6 +1334,9 @@ footer h2 {
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pl-10p {
+  padding-left: 10%;
+}
 .text-left {
   text-align: left;
 }
