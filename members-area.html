@@ -1,0 +1,25 @@
+---
+layout: default
+banner:
+  heading: Member's Area.
+  image_path: /uploads/blog-bg-17.jpg
+banner-style-indented: false
+---
+
+<!-- Header -->
+{% include hero-banner-full.html %}
+
+<!-- Members Area -->
+<section class="grid divide-x divide-black grid-cols-5 min-h-screen">
+    <div class="col-span-1">
+        {% for item in site.data.guide-settings.table-of-contents %}
+        <li class="border-b border-dark my-8 flex justify-between">
+            <h3 class="font-sans text-xl font-normal">{{item.destination}}</h3>
+            <span>{{item.text}}</span>
+        </li>
+        {% endfor %}
+    </div>
+    <div class="col-span-4">
+
+    </div>
+</section>

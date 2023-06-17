@@ -983,6 +983,12 @@ footer h2 {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1089,6 +1095,9 @@ footer h2 {
 .min-h-full {
   min-height: 100%;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -1168,6 +1177,20 @@ footer h2 {
 .gap-4 {
   gap: 1rem;
 }
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+.divide-black > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
+}
 .self-center {
   align-self: center;
 }
@@ -1188,6 +1211,9 @@ footer h2 {
 }
 .border-2 {
   border-width: 2px;
+}
+.border {
+  border-width: 1px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -1215,6 +1241,10 @@ footer h2 {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-dark {
   --tw-bg-opacity: 1;
@@ -1277,6 +1307,12 @@ footer h2 {
 }
 .bg-\[url\(\'\{\{page\.itinerary\.image\.image_path\}\}\'\)\] {
   background-image: url('{{page.itinerary.image.image_path}}');
+}
+.bg-\[url\(\'uploads\/blog-bg-10\.jpg\'\)\] {
+  background-image: url('uploads/blog-bg-10.jpg');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-10\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-10.jpg');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;

@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Blog Page 
+title: Blog Archive
+banner: 
+  heading: Recently on the Blog.
+  description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+  image_path: /uploads/blog-bg-10.jpg
+banner-style-indented: true
 seo:
   title:
   description:
@@ -11,15 +16,10 @@ seo:
 ---
 
 <!-- Header -->
-
 {% if page.banner-style-indented == true %}
-
 {% include hero-banner.html %}
-
 {% else %}
-
 {% include hero-banner-full.html %}
-
 {% endif %}
 <!------------------------ Split blog loop (part 1) ------------------------>
 <section class="p-5p">
