@@ -59,52 +59,6 @@ layout: default
 </section>
 
 <!-- Related Products -->
-{% include related-products.html %}
+{% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
 
-<!-- 
-Header section
-- 2 columns
-	- 1 column
-		- h1
-		- h2
-		- p
-		- shopify button
-	- 1 column
-		- image
-
-Before & After section
-- grid-cols-3
-	- 1 column
-		- col-span-2
-		- 	col-span-6
-	- 1 coloumn
-		- col-span-1
-			- h2 
-			- p
-
-How to section
-- grid-cols-3
-	- 1 column
-		- col-span-1
-		- h2
-		- ul (put in data file)
-	- 1 column
-		- col-span-2
-		- video (data file with our how to use presets content)
-
-FAQ section
-- create an includes
-	- h2
-	- h3
-	- js to show p when clicked
-
-Related products section
-- h2
-- grid-cols-3
-	- item
-		- image (link)
-		- tag
-		- h3 (link)
-		- description 
-		- price
- -->
+{% include related-products.html relevant-products=relevant-products %}

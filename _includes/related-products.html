@@ -1,12 +1,10 @@
-<section class="px-10p py-5p bg-sand">
+<section class="p-5p bg-sand">
   <div>
     <h4 class="text-4xl text-center mb-16">Related Products</h4>
 
     <div class="grid grid-cols-3 gap-2 align-items-center">
 
-      {% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
-
-      {% for product in relevant-products limit:3 %}
+      {% for product in include.relevant-products limit:3 %}
 
       <div class="break-inside-avoid block mb-4 px-2">
 

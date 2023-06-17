@@ -14,15 +14,15 @@ layout: default
 </section>
 
 <!-- What's Inside -->
-<section class="p-10p grid grid-cols-6 gap-2">
-    <div class="col-span-6 bg-image min-h-60" style="background-image: url('{{page.preview-images[0]}}');"></div>
-    {% for image in page.preview-images %}
-    <div class="col-span-1 bg-image aspect-landscape" style="background-image: url('{{image}}');"></div>
-    {% endfor %}
+<section class="p-5p">
+    <h2 class="text-4xl text-center">What's Inside</h2>
+    <div class="max-w-screen-xl mx-auto">
+        {% include thumbnail-gallery.html %}
+    </div>
 </section>
 
 <!-- Features -->
-<section class="grid grid-cols-2 py-5p px-10p">
+<section class="grid grid-cols-2 p-5p">
     <!-- Table of Contents -->
     <div class="col-span-1">
         <h2 class="text-4xl uppercase border-b border-dark pb-8">Table of contents</h2>
@@ -43,3 +43,8 @@ layout: default
         <a class="shopify-button">Add to cart</a>
     </div>
 </section>
+
+<!-- Related Products -->
+{% assign relevant-products = site.products-guides | where_exp:"product","product.url != page.url" %}
+
+{% include related-products.html relevant-products=relevant-products %}
