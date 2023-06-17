@@ -1068,11 +1068,11 @@ footer h2 {
 .aspect-landscape {
   aspect-ratio: 3 / 2;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .aspect-portrait {
   aspect-ratio: 4/5;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 .h-full {
   height: 100%;
@@ -1098,6 +1098,9 @@ footer h2 {
 .w-full {
   width: 100%;
 }
+.max-w-5xl {
+  max-width: 64rem;
+}
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1106,12 +1109,6 @@ footer h2 {
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-6xl {
-  max-width: 72rem;
-}
-.max-w-5xl {
-  max-width: 64rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1170,9 +1167,6 @@ footer h2 {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-8 {
-  gap: 2rem;
 }
 .self-center {
   align-self: center;
@@ -1269,32 +1263,20 @@ footer h2 {
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
 }
-.bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
-  background-image: url('/uploads/travel/travel-1.jpg');
-}
-.bg-\[url\(\'uploads\/blog-bg-1\.jpg\'\)\] {
-  background-image: url('uploads/blog-bg-1.jpg');
-}
-.bg-\[url\(\'\{\{page\.itinerary\.image\.image_path\}\}\'\)\] {
-  background-image: url('{{page.itinerary.image.image_path}}');
-}
-.bg-\[url\(\'\/uploads\/blog-bg-1\.jpg\'\)\] {
-  background-image: url('/uploads/blog-bg-1.jpg');
-}
-.bg-\[url\(\'\/uploads\/blog-bg-17\.jpg\'\)\] {
-  background-image: url('/uploads/blog-bg-17.jpg');
-}
 .bg-\[url\(\'\/uploads\/blog-bg-12\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-12.jpg');
-}
-.bg-\[url\(\'uploads\/blog-bg-13\.jpg\'\)\] {
-  background-image: url('uploads/blog-bg-13.jpg');
 }
 .bg-\[url\(\'\/uploads\/blog-bg-13\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-13.jpg');
 }
 .bg-\[url\(\'\/uploads\/blog-bg-14\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-14.jpg');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-17\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17.jpg');
+}
+.bg-\[url\(\'\{\{page\.itinerary\.image\.image_path\}\}\'\)\] {
+  background-image: url('{{page.itinerary.image.image_path}}');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;
@@ -1504,31 +1486,48 @@ footer h2 {
 /* Custom CSS */
 
 /* ----------- CSS RESET --------- */
+
+
+
+/* Memberspace popup styles */
+
+.MemberSpaceWidgetInternal__modal_modal ,
+.MemberSpaceWidgetInternal__modal_size-sm {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-zinc-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
+
 .hover\:bg-zinc-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
+
 .hover\:text-rose-500:hover {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
 }
+
 .hover\:text-rose-600:hover {
   --tw-text-opacity: 1;
   color: rgb(225 29 72 / var(--tw-text-opacity));
 }
+
 .group:hover .group-hover\:grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
 @media not all and (min-width: 640px) {
   .max-sm\:hidden {
     display: none;
   }
 }
+
 @media (min-width: 640px) {
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -1540,6 +1539,7 @@ footer h2 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
+
 @media (min-width: 768px) {
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
@@ -1572,6 +1572,7 @@ footer h2 {
     overflow-x: auto;
   }
 }
+
 .\[\&\>\=\*\:nth-child\(2\)\]\:col-span-2>=*:nth-child(2) {
   grid-column: span 2 / span 2;
 }

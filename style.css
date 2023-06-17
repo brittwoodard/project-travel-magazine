@@ -87,3 +87,13 @@ footer h2 {
 }
 
 }
+
+
+
+/* Memberspace popup styles */
+
+.MemberSpaceWidgetInternal__modal_modal ,
+.MemberSpaceWidgetInternal__modal_size-sm {
+
+    @apply bg-stone-300;
+}
