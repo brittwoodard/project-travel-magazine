@@ -1260,11 +1260,14 @@ footer h2 {
 .bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-1.jpg');
 }
+.bg-\[url\(\'uploads\/blog-bg-1\.jpg\'\)\] {
+  background-image: url('uploads/blog-bg-1.jpg');
+}
 .bg-\[url\(\'\{\{page\.itinerary\.image\.image_path\}\}\'\)\] {
   background-image: url('{{page.itinerary.image.image_path}}');
 }
-.bg-\[url\(\'uploads\/blog-bg-1\.jpg\'\)\] {
-  background-image: url('uploads/blog-bg-1.jpg');
+.bg-\[url\(\'\/uploads\/blog-bg-1\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-1.jpg');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;
