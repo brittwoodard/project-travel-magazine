@@ -1071,6 +1071,9 @@ footer h2 {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-portrait {
+  aspect-ratio: 4/5;
+}
 .h-full {
   height: 100%;
 }
@@ -1103,6 +1106,12 @@ footer h2 {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.max-w-6xl {
+  max-width: 72rem;
+}
+.max-w-5xl {
+  max-width: 64rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1161,6 +1170,9 @@ footer h2 {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .self-center {
   align-self: center;
@@ -1268,6 +1280,12 @@ footer h2 {
 }
 .bg-\[url\(\'\/uploads\/blog-bg-1\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-1.jpg');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-17\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17.jpg');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-12\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-12.jpg');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;

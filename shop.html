@@ -4,6 +4,7 @@ title: Shop
 banner: 
   heading: Shop.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+  image_path: /uploads/blog-bg-17.jpg
 banner-style-indented: false
 ---
 
@@ -17,30 +18,25 @@ banner-style-indented: false
 <!-- Explore Products -->
 <section class="p-5p">
 	<h2 class="text-center capitalize">Explore all our products</h2>
-	<div class="text-center">
-		<a class="button-2" href="#">Show all</a>
-		<a class="button-2" href="#">Travel Guides</a>
-		<a class="button-2" href="#">Lightroom Presets</a>
+	<div class="text-center mb-16">
+		<a class="button-2 mb-4" href="#">Show all</a>
+		<a class="button-2 mb-4" href="#">Travel Guides</a>
+		<a class="button-2 mb-4" href="#">Lightroom Presets</a>
 	</div>
-	
+	<div class="grid grid-cols-3 gap-4">
+		{% for product in site.products-presets %}
+		<div class="grid-cols-1">
+			<div class="bg-image aspect-portrait mb-4" style="background-image: url({{product.featured_image}});"></div>
+			<a href="{{product.url}}"> 
+				<h4 class="font-sans text-lg"> {{product.title}}</h4>
+			</a>
+			<p>{{product.price}}</p>
+		</div>
+		{% endfor %}
+	</div>
 </section>
 
-<section class="p-8 max-w-screen-xl mx-auto">
-
-	<h2> Shop all presets </h2> 
-	
-	<div class="grid grid-cols-3 gap-4">
-	
-		{% for product in site.products-presets %}
-		
-		<a href="{{product.url}}"> 
-			<img src="{{product.after-image}}">
-			<h4> {{product.title}}</h4>
-			<p> {{product.price}}</p>
-        </a>
-	
-	{% endfor %}
-	
-	</div>
-	
+<!-- Banner -->
+<section class="min-h-70 bg-image-style flex items-center" style="background-image: url('/uploads/blog-bg-10.jpg');">
+	<p class="font-serif p-10p text-6xl text-light max-w-5xl">Once you get the taste of travel, you'll never be the same.</p>
 </section>
