@@ -63,6 +63,13 @@ footer h2 {
     @apply uppercase font-serif mb-4 inline-block border-b border-dark tracking-widest text-2xl
 }
 
+.button-2 {
+    @apply uppercase text-dark border border-dark px-8 py-4 inline-block mx-4
+}
+.button-2:hover {
+    @apply bg-dark text-white px-8 py-4
+}
+
 .shopify-button {
     @apply uppercase bg-dark text-white px-8 py-4 inline-block
 }
