@@ -75,4 +75,8 @@ footer h2 {
     text-transform: initial;
 }
 
+.bg-image-style {
+    @apply bg-no-repeat bg-cover
+}
+
 }

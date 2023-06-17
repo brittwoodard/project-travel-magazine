@@ -41,9 +41,7 @@ module.exports = {
         '2/3': '75%',
         '1/1': '100%',
       },
-      aspectRatio: {
-        '5/3': '5 / 3',
-      },
+    
       minHeight:{
         '100': '100vh',
         '90': '90vh',
@@ -56,6 +54,7 @@ module.exports = {
         'landscape': '3 / 2',
         'portrait-tall': '5/8',
         'portrait': '4/5',
+        '5/3': '5 / 3',
       },
       colors: {
         'dark': '#27272a',

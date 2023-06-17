@@ -402,6 +402,10 @@ footer h2 {
     text-align: center;
     text-transform: initial;
 }
+.bg-image-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1028,6 +1032,9 @@ footer h2 {
 }
 .grid {
   display: grid;
+}
+.contents {
+  display: contents;
 }
 .hidden {
   display: none;
