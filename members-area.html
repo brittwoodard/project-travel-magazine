@@ -4,22 +4,35 @@ banner:
   heading: Member's Area.
   image_path: /uploads/blog-bg-17.jpg
 banner-style-indented: false
+members-content:
+  - title: This is a title
+    content_html: some content
+  - title: This is a second title
+    content_html: some content
+  - title: This is a third title
+    content_html: some content
 ---
 
 <!-- Header -->
-{% include hero-banner-full.html %}
+{% include hero-banner-members.html %}
 
 <!-- Members Area -->
-<section class="grid divide-x divide-black grid-cols-5 min-h-screen">
-    <div class="col-span-1">
-        {% for item in site.data.guide-settings.table-of-contents %}
-        <li class="border-b border-dark my-8 flex justify-between">
-            <h3 class="font-sans text-xl font-normal">{{item.destination}}</h3>
-            <span>{{item.text}}</span>
-        </li>
+<section class="min-h-80 px-5p grid grid-cols-4 divide-x divide-dark">
+    <div class="col-span-1 py-16">
+        {% for item in page.members-content %}
+        <a href="#{{item.title | slugify}}" class="block">{{item.title}}</a>
         {% endfor %}
     </div>
-    <div class="col-span-4">
+
+    <div class="col-span-3 py-16">
+
+        {% for item in page.members-content %}
+        <div id="{{item.title | slugify}}" class="p-5p border-b border-dark">
+            {{ item.content_html }}
+        </div>
+
+        {% endfor %}
 
     </div>
+
 </section>

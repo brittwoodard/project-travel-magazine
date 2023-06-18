@@ -1,6 +1,6 @@
 ---
 layout: modular-post
-title: Dans random trip
+title: Panoramic Views
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
@@ -9,7 +9,7 @@ featured: true
 categories:
   - travel
   - life
-featured_image: /uploads/travel/travel-1.jpg
+featured_image: uploads/blog-bg-10.jpg
 page_blocks:
   - _id: banner
     title: Image Banner
@@ -17,7 +17,7 @@ page_blocks:
     sub-heading: And this is your sub-heading
     text-color: '#000000'
     banner-height: min-h-60
-    banner-image: /uploads/travel/travel-1.jpg
+    banner-image: uploads/blog-bg-10.jpg
     background-position: bg-center
     text-position: items-center
   - _id: cta

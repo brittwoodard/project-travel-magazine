@@ -1,20 +1,21 @@
 ---
-layout: post
-title: Practice Post
+layout: modular-post
+title: Exploring Sumbawa
 subtitle: This is a subtitle
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
 banner-style-indented: false
 banner: 
-  heading: Practice Post
+  heading: Exploring Sumbawa
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur 
-author: 'dan'
+  image_path: /uploads/blog-bg-10.jpg
+author: 'Dan'
 featured: true
 categories:
   - travel
   - life
-featured_image: /uploads/travel/travel-1.jpg
+featured_image: /uploads/blog-bg-15.jpg
 seo:
   title:
   description:

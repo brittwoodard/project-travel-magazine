@@ -99,11 +99,11 @@ seo:
 
         <!-- Text container  -->
         <div>
-          <h3 class="text-2xl text-left my-4">
-            {{ post.title }}
+          <h3 class="text-2xl text-left font-sans my-4">
+            {{post.title}}
           </h3>
-          <p class="leading-relaxed mb-4">
-            {{ post.description }}</p>
+          <p class="leading-relaxed mb-4 line-clamp-3">
+            {{post.description}}</p>
           <a href="{{post.url}}" class="button">{{ page.blog.button.text }}</a>
         </div>
       </div>

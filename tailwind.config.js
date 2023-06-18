@@ -62,6 +62,7 @@ module.exports = {
         'light': 'white',
         'featured': 'rgb(248 113 113);',
         'sand': '#edeceb',
+        'accent': '#7791a8',
       },
     },
   },
