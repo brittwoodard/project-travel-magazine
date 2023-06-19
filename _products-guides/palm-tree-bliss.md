@@ -6,6 +6,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 price: $37
 featured_image: /uploads/travel/travel-3.jpg
 buy-button-id: 6132597457074
+type: travel guide
 preview-images:
   - /uploads/presets/ocean-blues-before-1.jpg
   - /uploads/presets/ocean-blues-before-2.jpg

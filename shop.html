@@ -17,27 +17,33 @@ banner-style-indented: false
 {% endif %}
 
 <!-- Explore Products -->
-<section class="p-5p">
-	<h2 class="text-center capitalize">Explore all our products</h2>
-	<div class="text-center mb-16">
-		<a class="button-2 mb-4" href="#">Show all</a>
-		<a class="button-2 mb-4" href="#">Travel Guides</a>
-		<a class="button-2 mb-4" href="#">Lightroom Presets</a>
+<section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
+
+	<h2 class="text-center text-4xl mb-1"> Shop all products </h2> 
+
+	<div class="filter p-6 text-center"> 
+		<a href="#" @click.prevent="filter = 'all'" class="shopify-button m-4">All</a>
+        <a href="#" @click.prevent="filter = 'travel-guide'" class="shopify-button m-4">Travel Guides</a>
+        <a href="#" @click.prevent="filter = 'preset'" class="shopify-button m-4">Presets </a>
 	</div>
+
 	<div class="grid grid-cols-3 gap-4">
-		{% for product in site.products-presets %}
-		<div class="grid-cols-1">
-			<div class="bg-image aspect-portrait mb-4" style="background-image: url({{product.featured_image}});"></div>
-			<a href="{{product.url}}"> 
-				<h4 class="font-sans text-lg"> {{product.title}}</h4>
-			</a>
-			<p>{{product.price}}</p>
+
+	{% assign all_products = site.products-guides | concat: site.products-presets | sort: 'title'  %}
+
+	{% for product in all_products %}
+		
+		<div class="{{product.type | slugify }}" x-show="filter === 'all' || filter === '{{ product.type | slugify }}'">
+		{% include product-loop-item.html %}
 		</div>
-		{% endfor %}
+			
+	{% endfor %}
+
 	</div>
+
 </section>
 
 <!-- Banner -->
-<section class="min-h-70 bg-image-style flex items-center" style="background-image: url('/uploads/blog-bg-10.jpg');">
+<section class="min-h-70 bg-image-style flex items-center md:bg-fixed" style="background-image: url('/uploads/blog-bg-10.jpg');">
 	<p class="font-serif p-10p text-6xl text-light max-w-5xl">Once you get the taste of travel, you'll never be the same.</p>
 </section>
