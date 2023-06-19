@@ -1595,6 +1595,10 @@ footer h2 {
     -moz-columns: 3;
          columns: 3;
   }
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 1;
+  }
 }
     
    @media (min-width: 768px) {
