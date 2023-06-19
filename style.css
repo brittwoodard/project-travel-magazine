@@ -71,7 +71,7 @@ footer h2 {
 }
 
 .shopify-button {
-    @apply uppercase bg-dark text-white px-8 py-4 inline-block
+    @apply uppercase bg-dark text-white px-8 py-4 inline-block border
 }
 
 .blurb {
@@ -86,6 +86,10 @@ footer h2 {
     @apply bg-no-repeat bg-cover bg-center
 }
 
+}
+
+.filter .active {
+    @apply bg-transparent text-dark border border-dark
 }
 
 

@@ -22,9 +22,9 @@ banner-style-indented: false
 	<h2 class="text-center text-4xl mb-1"> Shop all products </h2> 
 
 	<div class="filter p-6 text-center"> 
-		<a href="#" @click.prevent="filter = 'all'" class="shopify-button m-4">All</a>
-        <a href="#" @click.prevent="filter = 'travel-guide'" class="shopify-button m-4">Travel Guides</a>
-        <a href="#" @click.prevent="filter = 'preset'" class="shopify-button m-4">Presets </a>
+		<a href="#" class="shopify-button m-4" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'" >All</a>
+        <a href="#" class="shopify-button m-4" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a href="#" class="shopify-button m-4" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
 	</div>
 
 	<div class="grid grid-cols-3 gap-4">
