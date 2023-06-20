@@ -92,6 +92,14 @@ footer h2 {
     @apply bg-transparent text-dark border border-dark
 }
 
+.ul-parent-dots ul{
+    @apply list-disc mb-4
+}
+
+.ul-parent-dots li {
+    @apply mb-4
+}
+
 
 
 /* Memberspace popup styles */

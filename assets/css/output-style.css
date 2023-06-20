@@ -1518,6 +1518,15 @@ footer h2 {
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
 
+.ul-parent-dots ul {
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.ul-parent-dots li {
+  margin-bottom: 1rem;
+}
+
 
 
 /* Memberspace popup styles */
