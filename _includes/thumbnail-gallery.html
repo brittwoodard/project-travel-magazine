@@ -1,4 +1,4 @@
-<div x-data="{ mainImage: '{{ page.gallery[0] }}' }" class="grid grid-cols-6 gap-2">
+<div x-data="{ mainImage: '{{ page.gallery[0].image_path }}' }" class="grid grid-cols-6 gap-2">
     <!-- Main image -->
     <div class="col-span-full aspect-landscape relative">
         <div class="absolute inset-0 bg-cover bg-center" 
@@ -10,8 +10,8 @@
     {% for image in page.gallery %}
         <div class="col-span-1 aspect-landscape relative">
             <div class="absolute inset-0 bg-cover bg-center cursor-pointer" 
-                 :style="`background-image:url('{{gallery.image_path}}');`" 
-                 @click="mainImage = '{{gallery.image_path}}'">
+                 :style="`background-image:url('{{image.image_path}}');`" 
+                 @click="mainImage = '{{image.image_path}}'">
             </div>
         </div>
     {% endfor %}
