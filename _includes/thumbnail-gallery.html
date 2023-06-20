@@ -10,8 +10,8 @@
     {% for image in page.gallery %}
         <div class="col-span-1 aspect-landscape relative">
             <div class="absolute inset-0 bg-cover bg-center cursor-pointer" 
-                 :style="`background-image:url('{{image}}');`" 
-                 @click="mainImage = '{{image}}'">
+                 :style="`background-image:url('{{gallery.image_path}}');`" 
+                 @click="mainImage = '{{gallery.image_path}}'">
             </div>
         </div>
     {% endfor %}

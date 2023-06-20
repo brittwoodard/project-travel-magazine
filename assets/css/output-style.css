@@ -1259,9 +1259,6 @@ footer h2 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-\[url\(\'\/uploads\/blog-bg-10\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-10.jpg');
 }
