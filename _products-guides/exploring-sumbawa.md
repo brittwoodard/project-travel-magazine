@@ -14,7 +14,7 @@ type: travel guide
 featured_image: /uploads/blog-bg-1.jpg
 gallery:
   - image_path: /uploads/blog-bg-1.jpg
-  - image_path: /uploads/presets/ocean-blues-before-2.jpg
+  - image_path: /uploads/blog-bg-2.jpg
   - image_path: /uploads/presets/ocean-blues-before-3.jpg
   - image_path: /uploads/presets/ocean-blues-after-1.jpg
   - image_path: /uploads/presets/ocean-blues-after-2.jpg
