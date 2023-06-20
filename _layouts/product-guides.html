@@ -15,7 +15,7 @@ layout: default
 
 <!-- What's Inside -->
 <section class="p-5p">
-    <h2 class="text-4xl text-center">What's Inside</h2>
+    <h2 class="text-4xl text-center editable">What's Inside</h2>
     <div class="max-w-screen-xl mx-auto">
         {% include thumbnail-gallery.html %}
     </div>
@@ -25,7 +25,7 @@ layout: default
 <section class="grid grid-cols-2 p-5p">
     <!-- Table of Contents -->
     <div class="col-span-1">
-        <h2 class="text-4xl uppercase border-b border-dark pb-8">Table of contents</h2>
+        <h2 class="text-4xl uppercase border-b border-dark pb-8 editable">Table of contents</h2>
         <ul>
             {% for item in site.data.guide-settings.table-of-contents %}
             <li class="border-b border-dark my-8 flex justify-between">
