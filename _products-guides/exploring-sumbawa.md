@@ -18,7 +18,7 @@ gallery:
   - image_path: /uploads/guide-3.png
   - image_path: /uploads/blog-bg-1.jpg
   - image_path: /uploads/guide-2.png
-  - image_path: /uploads/presets/ocean-blues-after-3.jpg
+  - image_path: /uploads/blog-bg-2.jpg
 features_html: >-
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
