@@ -19,7 +19,7 @@ banner-style-indented: false
 <!-- Explore Products -->
 <section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
 
-	<h2 class="text-center text-4xl mb-1"> Shop all products </h2> 
+	<h2 class="text-center text-4xl mb-1 editable"> Shop all products </h2> 
 
 	<div class="filter p-6 text-center"> 
 		<a href="#" class="shopify-button m-4" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'" >All</a>
@@ -45,5 +45,5 @@ banner-style-indented: false
 
 <!-- Banner -->
 <section class="min-h-70 bg-image-style flex items-center md:bg-fixed" style="background-image: url('/uploads/blog-bg-10.jpg');">
-	<p class="font-serif p-10p text-6xl text-light max-w-5xl">Once you get the taste of travel, you'll never be the same.</p>
+	<p class="font-serif p-10p text-6xl text-light max-w-5xl editable">Once you get the taste of travel, you'll never be the same.</p>
 </section>
